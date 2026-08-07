@@ -10,6 +10,13 @@
     const night = document.querySelector(".half--night");
     const sparksLayer = document.querySelector(".sparks");
     const title = document.querySelector(".night__title");
+    const fontPicker = document.querySelector(".font-picker__select");
+
+    if (title && fontPicker) {
+        fontPicker.addEventListener("change", (event) => {
+            title.dataset.font = event.target.value;
+        });
+    }
 
     if (!night || !sparksLayer || !title || prefersReduced) return;
 

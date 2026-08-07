@@ -414,6 +414,30 @@ body {
     justify-content: center;
 }
 
+.night__title[data-font="bungee"] {
+    font-family: 'Bungee', sans-serif;
+    font-size: clamp(2.8rem, 6.8vw, 6.8rem);
+    letter-spacing: .02em;
+}
+
+.night__title[data-font="audiowide"] {
+    font-family: 'Audiowide', sans-serif;
+    font-size: clamp(2.7rem, 6.4vw, 6.4rem);
+    letter-spacing: .04em;
+}
+
+.night__title[data-font="righteous"] {
+    font-family: 'Righteous', sans-serif;
+    font-size: clamp(3.2rem, 7.4vw, 7.4rem);
+    letter-spacing: .025em;
+}
+
+.night__title[data-font="bowlby"] {
+    font-family: 'Bowlby One SC', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 6rem);
+    letter-spacing: .015em;
+}
+
 .night__title .letter {
     display: inline-block;
     transform-origin: center bottom;
@@ -561,6 +585,17 @@ body {
     opacity: 0;
 }
 
+.font-picker {
+    position: absolute;
+    top: clamp(1rem, 3vh, 2rem);
+    left: 50%;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    transform: translateX(-50%);
+}
+
 @media (max-width: 720px) {
     .menu {
         flex-direction: column;
@@ -583,6 +618,12 @@ body {
 
     .brand {
         writing-mode: horizontal-tb;
+    }
+
+    .font-picker {
+        top: .75rem;
+        width: calc(100% - 2rem);
+        justify-content: space-between;
     }
 }
 

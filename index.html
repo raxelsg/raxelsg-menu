@@ -10,6 +10,9 @@
     <link rel="preload" href="fonts/CormorantGaramond-Light.woff2" as="font" type="font/woff2">
     <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" type="font/woff2">
     <link rel="preload" href="fonts/Monoton-Regular.woff2" as="font" type="font/woff2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bowlby+One+SC&family=Bungee&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -54,6 +57,17 @@
         <div class="brand">
             <span class="brand__name">RAXEL SG</span>
             <span class="brand__slash">/</span>
+        </div>
+
+        <div class="font-picker" aria-label="Selector de fuente para Nightlife">
+            <label class="font-picker__label" for="nightlife-font">Estilo Nightlife</label>
+            <select class="font-picker__select" id="nightlife-font">
+                <option value="monoton">Monoton · Neon club</option>
+                <option value="bungee">Bungee · Festival</option>
+                <option value="audiowide">Audiowide · Futurista</option>
+                <option value="righteous">Righteous · Groove</option>
+                <option value="bowlby">Bowlby One SC · Headliner</option>
+            </select>
         </div>
 
     </main>
