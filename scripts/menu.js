@@ -10,13 +10,17 @@
     const night = document.querySelector(".half--night");
     const sparksLayer = document.querySelector(".sparks");
     const title = document.querySelector(".night__title");
-    const fontPicker = document.querySelector(".font-picker__select");
+    const studioTitle = document.querySelector(".studio__title");
 
-    if (title && fontPicker) {
+    document.querySelectorAll(".font-picker__select").forEach((fontPicker) => {
         fontPicker.addEventListener("change", (event) => {
-            title.dataset.font = event.target.value;
+            const target = event.target.id === "studio-font" ? studioTitle : title;
+
+            if (target) {
+                target.dataset.font = event.target.value;
+            }
         });
-    }
+    });
 
     if (!night || !sparksLayer || !title || prefersReduced) return;
 
