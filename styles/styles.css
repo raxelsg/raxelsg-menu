@@ -23,19 +23,11 @@
 }
 
 @font-face {
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 500;
-    font-display: block;
-    src: url('../fonts/CormorantGaramond-Medium.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Monoton';
+    font-family: 'Righteous';
     font-style: normal;
     font-weight: 400;
-    font-display: block;
-    src: url('../fonts/Monoton-Regular.woff2') format('woff2');
+    font-display: swap;
+    src: url('../fonts/Righteous-Regular.woff2') format('woff2');
 }
 
 :root {
@@ -158,6 +150,7 @@ body {
 
 .half__cta {
     display: inline-block;
+    color: inherit;
     margin-top: 2.2rem;
     padding: .85rem 2.4rem;
     font-family: 'Bebas Neue', sans-serif;
@@ -166,6 +159,7 @@ body {
     text-transform: uppercase;
     border: 1px solid rgba(255, 255, 255, .55);
     border-radius: 2px;
+    text-decoration: none;
     opacity: 0;
     transform: translateY(18px);
     transition: opacity .6s var(--ease) .1s, transform .6s var(--ease) .1s,
@@ -200,10 +194,9 @@ body {
 }
 
 .studio__title {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    font-size: clamp(3.5rem, 8vw, 8rem);
-    letter-spacing: .12em;
+    font-family: 'Righteous', sans-serif;
+    font-size: clamp(3.2rem, 7.4vw, 7.4rem);
+    letter-spacing: .025em;
     line-height: .95;
     color: var(--studio-ink);
     text-shadow: 0 2px 30px rgba(0, 0, 0, .6);
@@ -404,9 +397,9 @@ body {
 }
 
 .night__title {
-    font-family: 'Monoton', cursive;
-    font-size: clamp(2.6rem, 6.5vw, 6.5rem);
-    letter-spacing: .04em;
+    font-family: 'Righteous', sans-serif;
+    font-size: clamp(3.2rem, 7.4vw, 7.4rem);
+    letter-spacing: .025em;
     line-height: 1;
     color: #fff;
     display: inline-flex;
@@ -584,6 +577,7 @@ body {
     .brand {
         writing-mode: horizontal-tb;
     }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
