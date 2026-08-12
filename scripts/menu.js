@@ -10,17 +10,6 @@
     const night = document.querySelector(".half--night");
     const sparksLayer = document.querySelector(".sparks");
     const title = document.querySelector(".night__title");
-    const studioTitle = document.querySelector(".studio__title");
-
-    document.querySelectorAll(".font-picker__select").forEach((fontPicker) => {
-        fontPicker.addEventListener("change", (event) => {
-            const target = event.target.id === "studio-font" ? studioTitle : title;
-
-            if (target) {
-                target.dataset.font = event.target.value;
-            }
-        });
-    });
 
     if (!night || !sparksLayer || !title || prefersReduced) return;
 
